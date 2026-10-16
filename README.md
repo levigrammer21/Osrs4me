@@ -1,4 +1,4 @@
-# Realmstead 1.0 — A Living Realm
+# Realmstead 1.3 — A Living Realm
 
 Build a living world, then adventure alongside its inhabitants. This is a single-player simulated MMO with a world editor and a personal, semi-autonomous character. No paid services, API keys, installation, or external assets are required.
 
@@ -6,13 +6,15 @@ Build a living world, then adventure alongside its inhabitants. This is a single
 
 Open the hosted game, or upload the runtime files below to the root of a GitHub Pages repository. Enable Pages for that branch. Open the resulting HTTPS URL. **Do not open index.html directly from a file manager**: browser ES modules need a web server.
 
-Runtime files: `index.html`, `style.css`, `app.js`, `data.js`, `engine.js`, `render.js`, `icon.svg`, `manifest.webmanifest`, `sw.js`.
+Runtime files: `index.html`, `style.css`, `fantasy.css`, `art.js`, `editor.js`, `realm-serif.woff`, `realm-ui.woff`, `app.js`, `data.js`, `engine.js`, `render.js`, `terrain-renderer.js`, `icon.svg`, `manifest.webmanifest`, `sw.js`.
 
 For local development with Python available: `python3 -m http.server 8080`, then open http://localhost:8080. No dependency installation or build step is needed.
 
 ## The world is the main game
 
-The 80 × 60 tile map supports meadow, road, water, rock, sand, ash, Wilderness and safe-zone brushes. Use 1-, 3- or 5-tile terrain brushes. Place and relocate banks, trading posts, forges, cookhouses, workshops, apothecaries, Prayer shrines, Slayer lodges, taverns, fountains, lamps, banners, walls and bridges. Resource nodes and monster camps can be painted repeatedly. Buildings and resource nodes can be moved free; monster inspections can move their home camp. Demolition refunds 60%.
+Every new realm begins with **only meadow**: no pre-painted terrain, water, buildings, resources, monsters, roads or visible adventurers. Place an Arrival Gate wherever you want the realm to begin. Adventurers wait off-map until you explicitly open it.
+
+The 80 × 60 tile map supports meadow, road, water, rock, sand, ash, Wilderness and safe-zone brushes. Use 1- to 5-tile terrain brushes. Place and relocate banks, trading posts, forges, cookhouses, workshops, apothecaries, Prayer shrines, Slayer lodges, taverns, fountains, lamps, banners, walls and bridges. Resource nodes and monster camps can be painted repeatedly. Buildings and resource nodes can be moved free; monster inspections can move their home camp. Demolition refunds 60%.
 
 Water and walls block travel. Bridges connect land across water. Fishing spots belong on a shore. Towns do not need painted roads to function, but roads help make routes legible. If a task cannot be reached, adventurers choose other opportunities. Painting water cannot erase occupied tiles.
 
@@ -24,7 +26,7 @@ Market transactions pay an 8% levy; monster kills contribute bounty income; prod
 
 ## Adventurers
 
-Start with Levi and nine companions. Eight milestones each attract five more, arriving one every 12 ticks, up to a permanent population of 50. Newcomers have modest stage-appropriate skill progress. Adventurer names, personalities, inventories, banks, skills, gold, kills, deaths, Slayer assignments and equipment persist.
+Open your placed Arrival Gate to welcome Levi and nine companions. Eight milestones each attract five more, arriving one every 12 ticks, up to a permanent population of 50. Newcomers have modest stage-appropriate skill progress. Adventurer names, personalities, inventories, banks, skills, gold, kills, deaths, Slayer assignments and equipment persist.
 
 Personalities include warriors, anglers, miners, lumberjacks, artisans, mages, rangers, alchemists, hunters, PKers and explorers. AI chooses reachable work, acquires production prerequisites, gathers materials, equips upgrades, sells surplus, buys supplies, rests, offers bones, returns to gravestones and pursues Slayer assignments. Risk appetites allow prepared adventurers to enter valuable Wilderness areas; cautious characters favor safe targets. PKers look for suitable victims, with combat-level restrictions. Creating frontier rewards is how you attract activity there.
 
@@ -44,7 +46,7 @@ Magic spends regenerating mana, not runes. Ranged spends arrows. Prayer consumes
 
 ### Death and inventories
 
-Each adventurer carries 28 inventory slots, plus equipped weapon, armour and amulet. Arrows, bones and gems stack; other items occupy individual slots. Private banks have unlimited capacity and are accessed at bank buildings.
+Each adventurer carries 28 inventory slots, plus six equipped slots: main hand, off hand, helmet, armour, boots and amulet. Arrows, bones and gems stack; other items occupy individual slots. Private banks have unlimited capacity and are accessed at bank buildings.
 
 Outside the Wilderness: equipment stays equipped and carried items remain in a private gravestone. The owner can collect them. After 600 ticks, items move to recovery; visiting a bank and paying 15 personal gold transfers them to that adventurer's bank.
 
@@ -53,7 +55,7 @@ Inside Wilderness: the three most valuable carried/equipped item slots are prote
 ## Controls
 
 - Drag to pan, pinch or wheel to zoom, and tap the minimap to jump.
-- Select a build tool, then tap or drag to place it. With a tool active, use two fingers, right-drag, or hold Space to pan.
+- Enter World Forge to hold time and open the illustrated build shelf. Swipe horizontally or use its arrows to browse. Drag a building card upward onto the map, or select it and drag its ghost into position on the map. Release and confirm. Terrain and resources support continuous painting. Use two fingers, the hand tool, right-drag or Space to pan. Watch / Done returns to simulation.
 - Inspect mode lets you select adventurers, resources, buildings, monsters or ground.
 - Use the character panel for orders, skills, equipment, recipes, bank, market and Slayer store.
 - P toggles pause. Escape exits the build tool. Ctrl/Cmd+Z undoes a build stroke; Shift+Ctrl/Cmd+Z redoes it.
@@ -75,4 +77,23 @@ An HTTPS service worker caches runtime files after the first successful visit fo
 - `tests.mjs`: simulation, economy, AI, combat, death, persistence and long-run checks.
 - `ui-tests.mjs`: JavaScript UI/renderer integration smoke checks using test doubles. These do not perform browser layout or touch-device verification.
 
-Run `node tests.mjs` and `node ui-tests.mjs`, or `npm test`. Node 20+ is sufficient. No dependencies are needed.
+Run `node tests.mjs` and `node ui-tests.mjs`, or `npm test`. Node 20+ is sufficient. `editor-tests.mjs` additionally checks gesture classification, brush interpolation and blank-world admission. No dependencies are needed.
+
+## The Worldforge update (1.1)
+
+The interface uses a full-screen map, ornamental metal/leather navigation, parchment panels, original vector tool illustrations and embedded fantasy serif typography. Runtime font licensing is included in FONT-LICENSE.txt.
+
+Existing saves are preserved. The first update screen offers exporting the old realm, continuing it, or replacing it with a blank world. New worlds never load the seeded test fixture.
+
+## Build controls fix (1.2)
+
+The build tray has a fixed top bar with a World Paused indicator and labeled Undo, Redo and Done controls. Entering Build explicitly pauses simulation and locks pause/speed controls. Done exits building and resumes simulation. Undo/redo history belongs to that paused build session and clears on exit.
+
+## Foundation update (1.3)
+
+- Version v1.3.0 appears in the top header, even before application startup.
+- Undo/Redo/Done occupy a separate fixed bar below the header, outside the scrollable building tray. The Undo label stays visible when there is no history.
+- Placement previews and actual placement share the same rule function, including shore fishing, unique arrival gates, boundaries and occupied cells. Right-button panning does not place objects.
+- Equipment now has main hand, off hand, helmet, armour, boots and amulet. Shields support Melee, magical focuses support Magic and quivers support Ranged. All six slots connect to crafting, market stocks, AI upgrades and death rules. Old three-slot saves migrate automatically. Incompatible off-hand swaps require room in the pack and fail without losing anything if it is full.
+- The terrain/minimap use a persistent canvas layer. Unchanged frames reuse it; edited terrain updates only changed cells and neighbors. Skill thresholds use a table and binary lookup. Walkability and service destinations are cached between world edits.
+- `foundation-tests.mjs` covers equipment, migration, inventory conservation and editor validation. Browser layout and physical-device frame rate have not been measured in this environment.

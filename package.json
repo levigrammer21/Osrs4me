@@ -1,1 +1,8 @@
-{"name":"realmstead","version":"1.0.0","type":"module","scripts":{"test":"node tests.mjs"}}
+{
+  "name": "realmstead",
+  "version": "1.3.0",
+  "type": "module",
+  "scripts": {
+    "test": "node tests.mjs && node foundation-tests.mjs && node editor-tests.mjs && node ui-tests.mjs"
+  }
+}

@@ -1,0 +1,101 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> creature-adventure@0.1.0 balance
+> node --import tsx balance.ts
+
+{
+  "starters": [
+    {
+      "family": "F01",
+      "averageWins5m": 31.17,
+      "defeatRate": 0,
+      "averageLevel": 4.02
+    },
+    {
+      "family": "N01",
+      "averageWins5m": 14.14,
+      "defeatRate": 0.08,
+      "averageLevel": 2.84
+    },
+    {
+      "family": "W01",
+      "averageWins5m": 45.04,
+      "defeatRate": 0,
+      "averageLevel": 4.92
+    }
+  ],
+  "regionBossTeams": [
+    {
+      "region": 1,
+      "level": 10,
+      "wins": 16,
+      "defeats": 0
+    },
+    {
+      "region": 2,
+      "level": 15,
+      "wins": 25,
+      "defeats": 0
+    },
+    {
+      "region": 3,
+      "level": 30,
+      "wins": 50,
+      "defeats": 0
+    },
+    {
+      "region": 4,
+      "level": 55,
+      "wins": 0,
+      "defeats": 1
+    },
+    {
+      "region": 5,
+      "level": 90,
+      "wins": 48,
+      "defeats": 0
+    },
+    {
+      "region": 6,
+      "level": 135,
+      "wins": 0,
+      "defeats": 1
+    },
+    {
+      "region": 7,
+      "level": 190,
+      "wins": 0,
+      "defeats": 1
+    },
+    {
+      "region": 8,
+      "level": 255,
+      "wins": 0,
+      "defeats": 1
+    },
+    {
+      "region": 9,
+      "level": 330,
+      "wins": 0,
+      "defeats": 1
+    },
+    {
+      "region": 10,
+      "level": 415,
+      "wins": 0,
+      "defeats": 1
+    }
+  ],
+  "familyWins": {
+    "min": 20,
+    "max": 31
+  },
+  "rarityCounts": [
+    51879,
+    27212,
+    13867,
+    5201,
+    1660,
+    181
+  ]
+}

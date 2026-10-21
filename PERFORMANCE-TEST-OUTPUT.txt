@@ -1,0 +1,1 @@
+{"timestamp":"2026-10-19T20:32:52.454Z","inventory":50000,"naturalStatComputations":1000,"statMs":52.689370999999994,"bulkSalvaged":49999,"salvageMs":1209.250205,"equippedRetained":true,"method":"Single local Node runtime benchmark; indicative rather than a phone speed guarantee."}

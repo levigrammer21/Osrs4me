@@ -1,0 +1,458 @@
+{
+  "timestamp": "2026-10-19T20:26:15.289Z",
+  "seededTrials": 100,
+  "starters": [
+    {
+      "family": "F01",
+      "averageWins5m": 31.17,
+      "defeatRate": 0,
+      "averageLevel": 4.02
+    },
+    {
+      "family": "N01",
+      "averageWins5m": 14.14,
+      "defeatRate": 0.08,
+      "averageLevel": 2.84
+    },
+    {
+      "family": "W01",
+      "averageWins5m": 45.04,
+      "defeatRate": 0,
+      "averageLevel": 4.92
+    }
+  ],
+  "regionBossTeams": [
+    {
+      "region": 1,
+      "level": 10,
+      "wins": 16,
+      "defeats": 0
+    },
+    {
+      "region": 2,
+      "level": 15,
+      "wins": 25,
+      "defeats": 0
+    },
+    {
+      "region": 3,
+      "level": 30,
+      "wins": 50,
+      "defeats": 0
+    },
+    {
+      "region": 4,
+      "level": 55,
+      "wins": 0,
+      "defeats": 1
+    },
+    {
+      "region": 5,
+      "level": 90,
+      "wins": 48,
+      "defeats": 0
+    },
+    {
+      "region": 6,
+      "level": 135,
+      "wins": 0,
+      "defeats": 1
+    },
+    {
+      "region": 7,
+      "level": 190,
+      "wins": 0,
+      "defeats": 1
+    },
+    {
+      "region": 8,
+      "level": 255,
+      "wins": 0,
+      "defeats": 1
+    },
+    {
+      "region": 9,
+      "level": 330,
+      "wins": 0,
+      "defeats": 1
+    },
+    {
+      "region": 10,
+      "level": 415,
+      "wins": 0,
+      "defeats": 1
+    }
+  ],
+  "familySubstitution": [
+    {
+      "id": "F01",
+      "role": "Heat-building frontline special attacker",
+      "wins": 25,
+      "defeats": 0
+    },
+    {
+      "id": "F02",
+      "role": "Floating healer with stored warmth",
+      "wins": 23,
+      "defeats": 0
+    },
+    {
+      "id": "F03",
+      "role": "Fast multi-strike physical attacker",
+      "wins": 24,
+      "defeats": 0
+    },
+    {
+      "id": "F04",
+      "role": "Burrowing retaliation tank",
+      "wins": 24,
+      "defeats": 0
+    },
+    {
+      "id": "F05",
+      "role": "Smoke accuracy and attack debuffer",
+      "wins": 26,
+      "defeats": 0
+    },
+    {
+      "id": "F06",
+      "role": "Team attack-speed support",
+      "wins": 26,
+      "defeats": 0
+    },
+    {
+      "id": "F07",
+      "role": "Armor-breaking physical attacker",
+      "wins": 27,
+      "defeats": 0
+    },
+    {
+      "id": "F08",
+      "role": "Defense-piercing ranged attacker",
+      "wins": 24,
+      "defeats": 0
+    },
+    {
+      "id": "F09",
+      "role": "Damage-absorbing heat tank",
+      "wins": 20,
+      "defeats": 0
+    },
+    {
+      "id": "F10",
+      "role": "Powerful area special attacker",
+      "wins": 31,
+      "defeats": 0
+    },
+    {
+      "id": "N01",
+      "role": "Ally-protecting bark tank",
+      "wins": 25,
+      "defeats": 0
+    },
+    {
+      "id": "N02",
+      "role": "Regeneration-focused healer",
+      "wins": 24,
+      "defeats": 0
+    },
+    {
+      "id": "N03",
+      "role": "Restraint and speed-control specialist",
+      "wins": 26,
+      "defeats": 0
+    },
+    {
+      "id": "N04",
+      "role": "Special-attack support",
+      "wins": 27,
+      "defeats": 0
+    },
+    {
+      "id": "N05",
+      "role": "Durable damage-redirecting tank",
+      "wins": 22,
+      "defeats": 0
+    },
+    {
+      "id": "N06",
+      "role": "Fast finishing physical attacker",
+      "wins": 26,
+      "defeats": 0
+    },
+    {
+      "id": "N07",
+      "role": "Speed-draining defensive debuffer",
+      "wins": 23,
+      "defeats": 0
+    },
+    {
+      "id": "N08",
+      "role": "Resin-shielding support",
+      "wins": 22,
+      "defeats": 0
+    },
+    {
+      "id": "N09",
+      "role": "Damage-scaling frontline bruiser",
+      "wins": 24,
+      "defeats": 0
+    },
+    {
+      "id": "N10",
+      "role": "Evasive counterattacker",
+      "wins": 25,
+      "defeats": 0
+    },
+    {
+      "id": "E01",
+      "role": "High-defense frontline tank",
+      "wins": 24,
+      "defeats": 0
+    },
+    {
+      "id": "E02",
+      "role": "Armor-piercing physical attacker",
+      "wins": 25,
+      "defeats": 0
+    },
+    {
+      "id": "E03",
+      "role": "Resonance-based special attacker",
+      "wins": 27,
+      "defeats": 0
+    },
+    {
+      "id": "E04",
+      "role": "Fragile critical-hit attacker",
+      "wins": 25,
+      "defeats": 0
+    },
+    {
+      "id": "E05",
+      "role": "Slow and defense-reduction controller",
+      "wins": 26,
+      "defeats": 0
+    },
+    {
+      "id": "E06",
+      "role": "Special-defense support",
+      "wins": 24,
+      "defeats": 0
+    },
+    {
+      "id": "E07",
+      "role": "Shield-breaking physical bruiser",
+      "wins": 28,
+      "defeats": 0
+    },
+    {
+      "id": "E08",
+      "role": "Rapid-attack counter specialist",
+      "wins": 27,
+      "defeats": 0
+    },
+    {
+      "id": "E09",
+      "role": "Evasive targeting disruptor",
+      "wins": 23,
+      "defeats": 0
+    },
+    {
+      "id": "E10",
+      "role": "Stun-focused defensive controller",
+      "wins": 22,
+      "defeats": 0
+    },
+    {
+      "id": "S01",
+      "role": "Extremely fast single-target attacker",
+      "wins": 28,
+      "defeats": 0
+    },
+    {
+      "id": "S02",
+      "role": "Allied action-speed support",
+      "wins": 24,
+      "defeats": 0
+    },
+    {
+      "id": "S03",
+      "role": "Chain-damage special attacker",
+      "wins": 31,
+      "defeats": 0
+    },
+    {
+      "id": "S04",
+      "role": "Healing and defensive support",
+      "wins": 24,
+      "defeats": 0
+    },
+    {
+      "id": "S05",
+      "role": "Ability-disrupting special attacker",
+      "wins": 24,
+      "defeats": 0
+    },
+    {
+      "id": "S06",
+      "role": "Charge-storing frontline bruiser",
+      "wins": 25,
+      "defeats": 0
+    },
+    {
+      "id": "S07",
+      "role": "Evasive critical-hit attacker",
+      "wins": 26,
+      "defeats": 0
+    },
+    {
+      "id": "S08",
+      "role": "Pressure damage-reduction tank",
+      "wins": 22,
+      "defeats": 0
+    },
+    {
+      "id": "S09",
+      "role": "Enemy-position disruption and area control",
+      "wins": 25,
+      "defeats": 0
+    },
+    {
+      "id": "S10",
+      "role": "Accuracy and evasion support",
+      "wins": 25,
+      "defeats": 0
+    },
+    {
+      "id": "W01",
+      "role": "Adaptive special attacker",
+      "wins": 25,
+      "defeats": 0
+    },
+    {
+      "id": "W02",
+      "role": "Fast physical finisher",
+      "wins": 26,
+      "defeats": 0
+    },
+    {
+      "id": "W03",
+      "role": "Barrier-generating frontline defender",
+      "wins": 23,
+      "defeats": 0
+    },
+    {
+      "id": "W04",
+      "role": "Healer and status cleanser",
+      "wins": 26,
+      "defeats": 0
+    },
+    {
+      "id": "W05",
+      "role": "Defense-reducing debuffer",
+      "wins": 27,
+      "defeats": 0
+    },
+    {
+      "id": "W06",
+      "role": "Repeated-strike special attacker",
+      "wins": 29,
+      "defeats": 0
+    },
+    {
+      "id": "W07",
+      "role": "Backline-protecting tank",
+      "wins": 26,
+      "defeats": 0
+    },
+    {
+      "id": "W08",
+      "role": "Entanglement and speed-drain controller",
+      "wins": 22,
+      "defeats": 0
+    },
+    {
+      "id": "W09",
+      "role": "Sonic-burst special attacker",
+      "wins": 30,
+      "defeats": 0
+    },
+    {
+      "id": "W10",
+      "role": "Defensive slowing and shielding support",
+      "wins": 22,
+      "defeats": 0
+    }
+  ],
+  "raritySamples": 100000,
+  "rarityCounts": [
+    51879,
+    27212,
+    13867,
+    5201,
+    1660,
+    181
+  ],
+  "upgradeMilestones": [
+    {
+      "target": 10,
+      "chance": 1,
+      "expectedAttempts": 1
+    },
+    {
+      "target": 11,
+      "chance": 0.95,
+      "expectedAttempts": 1.0526315789473684
+    },
+    {
+      "target": 20,
+      "chance": 0.5987369392383787,
+      "expectedAttempts": 1.6701825701150936
+    },
+    {
+      "target": 30,
+      "chance": 0.3584859224085419,
+      "expectedAttempts": 2.7895098175162607
+    },
+    {
+      "target": 40,
+      "chance": 0.21463876394293727,
+      "expectedAttempts": 4.658990676380594
+    },
+    {
+      "target": 60,
+      "chance": 0.07694497527671315,
+      "expectedAttempts": 12.99630023148039
+    },
+    {
+      "target": 100,
+      "chance": 0.01,
+      "expectedAttempts": 100
+    },
+    {
+      "target": 200,
+      "chance": 0.01,
+      "expectedAttempts": 100
+    }
+  ],
+  "variantAnalytic": {
+    "inverted": 0.005,
+    "prismatic": 0.005,
+    "sparkling": 0.005,
+    "glowing": 0.005,
+    "anyRare": 0.01990000000000003,
+    "specificDual": 0.000025,
+    "bothMatchingParentsDual": 0.0016
+  },
+  "content": {
+    "families": 50,
+    "forms": 150,
+    "activities": 112
+  },
+  "limitations": [
+    "A substitution win does not establish competitive equality.",
+    "These simulations omit equipment and player strategy optimization.",
+    "Real-time cloud login and mobile-device hardware behavior require live verification."
+  ]
+}

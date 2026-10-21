@@ -1,0 +1,32 @@
+[
+  {
+    "name": "balanced farming",
+    "level": 80,
+    "encounter": "wild-2-0",
+    "meanEggs": 5.5,
+    "meanEquipment": 7.791666666666667,
+    "meanVictories": 10024,
+    "minEggs": 2,
+    "maxEggs": 10
+  },
+  {
+    "name": "overleveled starter farming",
+    "level": 300,
+    "encounter": "wild-0-0",
+    "meanEggs": 4.833333333333333,
+    "meanEquipment": 8.75,
+    "meanVictories": 10286,
+    "minEggs": 0,
+    "maxEggs": 9
+  },
+  {
+    "name": "boss farming",
+    "level": 300,
+    "encounter": "boss-2",
+    "meanEggs": 6.208333333333333,
+    "meanEquipment": 10.5,
+    "meanVictories": 10024,
+    "minEggs": 0,
+    "maxEggs": 11
+  }
+]

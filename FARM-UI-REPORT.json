@@ -1,0 +1,266 @@
+{
+  "timestamp": "2026-10-20T03:18:47.761Z",
+  "checks": [
+    {
+      "name": "farm explains starter incubation",
+      "passed": true
+    },
+    {
+      "name": "first hatch works directly from farm",
+      "passed": true
+    },
+    {
+      "name": "welcome basket creates helpers and second nest",
+      "passed": true
+    },
+    {
+      "name": "farm adventures open real combat",
+      "passed": true
+    },
+    {
+      "name": "battle shows actual automatic action events",
+      "passed": true
+    },
+    {
+      "name": "refresh preserves the active battle",
+      "passed": true
+    },
+    {
+      "name": "home centers the visible farm and its working residents",
+      "passed": true
+    },
+    {
+      "name": "dashboard fits 320px",
+      "passed": true
+    },
+    {
+      "name": "dashboard fits 390px",
+      "passed": true
+    },
+    {
+      "name": "dashboard fits 768px",
+      "passed": true
+    },
+    {
+      "name": "dashboard fits 1280px",
+      "passed": true
+    },
+    {
+      "name": "Combat is one tap away on mobile",
+      "passed": true
+    },
+    {
+      "name": "Combat fits mobile",
+      "passed": true
+    },
+    {
+      "name": "Creatures is one tap away on mobile",
+      "passed": true
+    },
+    {
+      "name": "Creatures fits mobile",
+      "passed": true
+    },
+    {
+      "name": "Skills is one tap away on mobile",
+      "passed": true
+    },
+    {
+      "name": "Skills fits mobile",
+      "passed": true
+    },
+    {
+      "name": "Farm is one tap away on mobile",
+      "passed": true
+    },
+    {
+      "name": "Farm fits mobile",
+      "passed": true
+    },
+    {
+      "name": "Equipment is one tap away on mobile",
+      "passed": true
+    },
+    {
+      "name": "Equipment fits mobile",
+      "passed": true
+    },
+    {
+      "name": "Slayer is one tap away on mobile",
+      "passed": true
+    },
+    {
+      "name": "Slayer fits mobile",
+      "passed": true
+    },
+    {
+      "name": "Collection is one tap away on mobile",
+      "passed": true
+    },
+    {
+      "name": "Collection fits mobile",
+      "passed": true
+    },
+    {
+      "name": "Shop is one tap away on mobile",
+      "passed": true
+    },
+    {
+      "name": "Shop fits mobile",
+      "passed": true
+    },
+    {
+      "name": "Settings is one tap away on mobile",
+      "passed": true
+    },
+    {
+      "name": "Settings fits mobile",
+      "passed": true
+    },
+    {
+      "name": "Home is one tap away on mobile",
+      "passed": true
+    },
+    {
+      "name": "Home fits mobile",
+      "passed": true
+    },
+    {
+      "name": "visible projectiles travel from both teams",
+      "passed": true
+    },
+    {
+      "name": "battle explains abilities through live action feed",
+      "passed": true
+    },
+    {
+      "name": "live battle exposes per-victory and conditional rarity odds",
+      "passed": true
+    },
+    {
+      "name": "hunts show six compact encounter rows",
+      "passed": true
+    },
+    {
+      "name": "boss rewards show guaranteed catalyst and relic chance",
+      "passed": true
+    },
+    {
+      "name": "dungeon completion odds distinguish guaranteed rewards",
+      "passed": true
+    },
+    {
+      "name": "raid completion odds show guaranteed legendary item",
+      "passed": true
+    },
+    {
+      "name": "combat team editor opens directly without creature-menu detour",
+      "passed": true
+    },
+    {
+      "name": "a second farm task starts without stopping the first",
+      "passed": true
+    },
+    {
+      "name": "parallel tasks persist through refresh",
+      "passed": true
+    },
+    {
+      "name": "foraging exposes its real egg discovery chance",
+      "passed": true
+    },
+    {
+      "name": "focused Farm tab Overview works",
+      "passed": true
+    },
+    {
+      "name": "focused Farm tab Hatchery works",
+      "passed": true
+    },
+    {
+      "name": "focused Farm tab Breeding works",
+      "passed": true
+    },
+    {
+      "name": "focused Farm tab Buildings works",
+      "passed": true
+    },
+    {
+      "name": "34 identical eggs appear as one family stack",
+      "passed": true
+    },
+    {
+      "name": "loading a stack decrements it by one and warms a nest",
+      "passed": true
+    },
+    {
+      "name": "equipment uses compact rows",
+      "passed": true
+    },
+    {
+      "name": "one item tap reveals stats, equip and upgrade controls",
+      "passed": true
+    },
+    {
+      "name": "item locking works from its detail sheet",
+      "passed": true
+    },
+    {
+      "name": "Slayer has a clear next action",
+      "passed": true
+    },
+    {
+      "name": "Slayer hunts expose their drop rates",
+      "passed": true
+    },
+    {
+      "name": "Escape closes the top detail sheet",
+      "passed": true
+    },
+    {
+      "name": "Home fits desktop",
+      "passed": true
+    },
+    {
+      "name": "Combat fits desktop",
+      "passed": true
+    },
+    {
+      "name": "Creatures fits desktop",
+      "passed": true
+    },
+    {
+      "name": "Skills fits desktop",
+      "passed": true
+    },
+    {
+      "name": "Farm fits desktop",
+      "passed": true
+    },
+    {
+      "name": "Equipment fits desktop",
+      "passed": true
+    },
+    {
+      "name": "Slayer fits desktop",
+      "passed": true
+    },
+    {
+      "name": "Collection fits desktop",
+      "passed": true
+    },
+    {
+      "name": "Shop fits desktop",
+      "passed": true
+    },
+    {
+      "name": "Settings fits desktop",
+      "passed": true
+    },
+    {
+      "name": "no uncaught UI errors",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

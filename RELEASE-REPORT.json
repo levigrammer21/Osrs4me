@@ -1,0 +1,224 @@
+{
+  "timestamp": "2026-10-20T13:37:33.463Z",
+  "adventures": [
+    {
+      "id": "dungeon-0",
+      "name": "Rootbound Vault",
+      "trials": [
+        {
+          "seed": 91,
+          "level": 80,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 201,
+          "level": 80,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 802,
+          "level": 80,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        }
+      ]
+    },
+    {
+      "id": "dungeon-1",
+      "name": "The Broken Kiln",
+      "trials": [
+        {
+          "seed": 91,
+          "level": 80,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 201,
+          "level": 80,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 802,
+          "level": 80,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        }
+      ]
+    },
+    {
+      "id": "dungeon-2",
+      "name": "Coral Labyrinth",
+      "trials": [
+        {
+          "seed": 91,
+          "level": 135,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 201,
+          "level": 135,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 802,
+          "level": 135,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        }
+      ]
+    },
+    {
+      "id": "dungeon-3",
+      "name": "Eye of the Tempest",
+      "trials": [
+        {
+          "seed": 91,
+          "level": 383,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 201,
+          "level": 383,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 802,
+          "level": 383,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        }
+      ]
+    },
+    {
+      "id": "dungeon-4",
+      "name": "Convergence Descent",
+      "trials": [
+        {
+          "seed": 91,
+          "level": 623,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 201,
+          "level": 623,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 802,
+          "level": 623,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        }
+      ]
+    },
+    {
+      "id": "raid-0",
+      "name": "The Threefold Crucible",
+      "trials": [
+        {
+          "seed": 91,
+          "level": 285,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 201,
+          "level": 380,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 802,
+          "level": 380,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        }
+      ]
+    },
+    {
+      "id": "raid-1",
+      "name": "Choir Beyond the Tide",
+      "trials": [
+        {
+          "seed": 91,
+          "level": 660,
+          "win": true,
+          "encounters": 3,
+          "restored": true
+        },
+        {
+          "seed": 201,
+          "level": 660,
+          "win": true,
+          "encounters": 3,
+          "restored": true
+        },
+        {
+          "seed": 802,
+          "level": 660,
+          "win": true,
+          "encounters": 3,
+          "restored": true
+        }
+      ]
+    },
+    {
+      "id": "raid-2",
+      "name": "Heart of Convergence",
+      "trials": [
+        {
+          "seed": 91,
+          "level": 830,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 201,
+          "level": 830,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        },
+        {
+          "seed": 802,
+          "level": 830,
+          "win": true,
+          "encounters": 4,
+          "restored": true
+        }
+      ]
+    }
+  ],
+  "evolutionEdges": 100,
+  "discoveredForms": 150,
+  "method": "Three deterministic seeds per adventure; balanced six-form team; tier-10 Legendary gear at +20; search increasing levels, then verify serialized mid-run restore equals uninterrupted settlement. Progression is deliberately injected only in regression fixtures, not presented as a natural playthrough."
+}

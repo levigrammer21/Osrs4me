@@ -1,99 +1,92 @@
-# Realmstead 1.3 — A Living Realm
+# Creature Adventure
 
-Build a living world, then adventure alongside its inhabitants. This is a single-player simulated MMO with a world editor and a personal, semi-autonomous character. No paid services, API keys, installation, or external assets are required.
+Release **1.3.0 — Idle Interface & Rare Loot**. A mobile-first, single-player creature collector using the owner's `creaturerpg` Firebase project. All calculations run on-device; Firebase handles authentication and cloud snapshots. No Blaze plan, Cloud Functions, paid backend, or billing setup.
 
-## Play
+The package contains the playable compiled game, complete TypeScript source, all 150 painted forms, configuration files and actual test reports. Production account setup is still required in the owner’s existing Firebase/GitHub projects; no live deployment or real-account verification is claimed.
 
-Open the hosted game, or upload the runtime files below to the root of a GitHub Pages repository. Enable Pages for that branch. Open the resulting HTTPS URL. **Do not open index.html directly from a file manager**: browser ES modules need a web server.
+## Phone-only deployment
 
-Runtime files: `index.html`, `style.css`, `fantasy.css`, `art.js`, `editor.js`, `realm-serif.woff`, `realm-ui.woff`, `app.js`, `data.js`, `engine.js`, `render.js`, `terrain-renderer.js`, `icon.svg`, `manifest.webmanifest`, `sw.js`.
+The repository delivery includes a compiled `index.html`, JavaScript/CSS bundles, manifest, service worker, and flat TypeScript source. No local build is needed to play.
 
-For local development with Python available: `python3 -m http.server 8080`, then open http://localhost:8080. No dependency installation or build step is needed.
+1. On GitHub, open this repository → **Settings → Pages**.
+2. Select **Deploy from a branch**, the delivered branch, and **/(root)**. Save.
+3. Wait for GitHub to show the Pages URL. Expected repository path: `https://levigrammer21.github.io/Creature-adventure-/` (availability must be verified after Pages is enabled).
+4. Open that URL in your phone's normal browser. Add it to your home screen if desired.
 
-## The world is the main game
+No `.github/workflows` exception is used. Source and deployable files remain flat; generated local staging and installed dependencies are not committed. All assets are bundled or use system-font fallback; Firebase Storage is not used.
 
-Every new realm begins with **only meadow**: no pre-painted terrain, water, buildings, resources, monsters, roads or visible adventurers. Place an Arrival Gate wherever you want the realm to begin. Adventurers wait off-map until you explicitly open it.
+## Firebase console setup — required once
 
-The 80 × 60 tile map supports meadow, road, water, rock, sand, ash, Wilderness and safe-zone brushes. Use 1- to 5-tile terrain brushes. Place and relocate banks, trading posts, forges, cookhouses, workshops, apothecaries, Prayer shrines, Slayer lodges, taverns, fountains, lamps, banners, walls and bridges. Resource nodes and monster camps can be painted repeatedly. Buildings and resource nodes can be moved free; monster inspections can move their home camp. Demolition refunds 60%.
+The provided web config is included. It does not grant administrative access to your Firebase console. These settings have **not** been changed for you:
 
-Water and walls block travel. Bridges connect land across water. Fishing spots belong on a shore. Towns do not need painted roads to function, but roads help make routes legible. If a task cannot be reached, adventurers choose other opportunities. Painting water cannot erase occupied tiles.
+1. In the existing **creaturerpg** project, enable Authentication → Email/Password and Google. Choose the Google support email if asked.
+2. Add **levigrammer21.github.io** to Authentication's authorized domains. Use the hostname without the repository path. Keep your existing domains.
+3. Create the default Cloud Firestore database if it does not exist. Stay on the free Spark plan.
+4. Copy the complete contents of the root **firestore.rules** file into Firestore → Rules and publish them. Do not use public test rules.
+5. Open the game, create/sign into your own account, and select **Save to cloud now** in Settings.
+6. Verify on another device by signing into the same account. After the initial transfer, use one active device at a time.
 
-Resources have six tiers with requirements 1, 10, 25, 40, 60 and 80. Tiers zero and one begin unlocked. Each two realm milestones unlock another resource tier. Enemy access also grows with milestones. The worldbuilder pays the realm treasury, separate from the player character's personal gold.
+Google sign-in uses a popup. If an embedded app browser blocks popups, open the Pages URL in Chrome or Safari. Password reset is available in the account panel.
 
-### Realm economy
+## Device and cloud saves
 
-Market transactions pay an 8% levy; monster kills contribute bounty income; production contributes 2 gold per action. Every 100 ticks, base settlement income pays 15 gold plus 3 per tavern or market. Each milestone grants 300 gold. Selling transfers actual adventurer inventory into shared market stock; purchasing consumes stock and personal gold. Merchants periodically replenish bounded basic supplies and equipment. This is an intentionally supported game economy, not a closed monetary simulation.
+The guest sanctuary and each signed-in account have separate IndexedDB saves. If you play as a guest first, sign in and use **Settings → Import guest sanctuary**, then **Save to cloud now**. This explicitly replaces the account's current local timeline; it does not merge rewards.
 
-## Adventurers
+Local checkpoints occur every five seconds and after commands. Cloud checkpoints begin at a 90-second interval and automatically space out as snapshot size grows to reduce free-plan write traffic. They can also be requested manually. Cloud data is partitioned into immutable bounded snapshot pages with an atomically updated revision pointer. A new pointer becomes visible only after its pages are written.
 
-Open your placed Arrival Gate to welcome Levi and nine companions. Eight milestones each attract five more, arriving one every 12 ticks, up to a permanent population of 50. Newcomers have modest stage-appropriate skill progress. Adventurer names, personalities, inventories, banks, skills, gold, kills, deaths, Slayer assignments and equipment persist.
+If a different device saved first, the game stops automatic reconciliation and offers an export of the current timeline and loading the cloud timeline. It never adds rewards from conflicting timelines. Cloud network/quota failures preserve the local checkpoint. Do not clear browser storage before unsynced progress is backed up.
 
-Personalities include warriors, anglers, miners, lumberjacks, artisans, mages, rangers, alchemists, hunters, PKers and explorers. AI chooses reachable work, acquires production prerequisites, gathers materials, equips upgrades, sells surplus, buys supplies, rests, offers bones, returns to gravestones and pursues Slayer assignments. Risk appetites allow prepared adventurers to enter valuable Wilderness areas; cautious characters favor safe targets. PKers look for suitable victims, with combat-level restrictions. Creating frontier rewards is how you attract activity there.
+Server timestamps provide a connected clock anchor where rules permit it. Guest and disconnected progress use the device clock until reconnection. This is not an anti-cheat service; modified clients can alter their own progress, as accepted by the owner.
 
-Levi uses the same simulation and economy. Orders include autonomous adventuring, gathering, hunting a species, repeated production, Slayer, Prayer, banking, trading, resting, PKing and walking. Repeating orders persist through supply trips and remain saved when the character temporarily finds fallback work. Explicitly ordering a Wilderness node or target permits that risk.
+## Playing
 
-## Skills and content
+- Choose Cindlet, Burlit, or Droplet. Your first egg takes 30 seconds; later eggs share a five-minute base incubation duration.
+- Home is a compact account overview with active activities, skill levels and farm status. Hatch your first companion there, then open the once-only welcome basket for Pebbit/Sporel helper eggs and a second nest if needed.
+- The bottom buttons open Home, Combat, Skills, Farm and Bank. On phones, the menu button opens all destinations and direct skill shortcuts. On larger screens, grouped sidebar navigation shows skill levels and active jobs. The bottom bar includes Bank.
+- Use **Combat team** edits your battle formation. Skills uses an activity catalog and recipe panel: each work area has its own task and one to six helpers. Start with three parallel tasks; each Workshop level adds one up to eight. A creature keeps one assignment.
+- Combat has focused Battle, Hunts, Dungeons and Raids tabs. Elemental projectiles, impacts, floating numbers, action bars and ability captions follow real combat events.
+- Tap **Drop rates** on a battle or encounter to see actual per-victory egg/equipment odds, family chances, rarity odds and guaranteed rewards. Dungeon and raid completion rewards are separate from encounter loot. Foraging shows egg chance per cycle; Breeding shows the selected parents’ inheritance odds.
+- Farm has Overview, Hatchery, Breeding and Buildings tabs. Equipment uses compact rows: tap one to equip, upgrade or inspect it. Shop separates Supplies, Slayer and Materials.
+- Tap **Start hunt** on Home or select a wild encounter under Combat → Hunts. The opening list favors your first companion's elemental advantage.
+- Claim **Into the wilds** in the Home journal or Collection → Journal for a second egg.
+- Give free creatures different farm jobs. Gathering and production share your materials and can run alongside combat. Ingredients reserve at cycle start; pause finishes that cycle before helpers can move. Production stops if supplies run out.
+- The first boss unlocks breeding, equipment upgrades, and Slayer. Evolution is manual at levels 25 and 75, with materials and boss requirements.
+- Pause skilling and let the reserved cycle finish before changing its crew. Stop combat before changing its formation or equipment.
+- Facility descriptions show automation milestones. Rule previews exclude protected creatures/equipment. Review destructive actions carefully.
+- Defeat stops combat. The team recovers automatically, and a retry resumes the saved encounter when requested. Earned rewards remain.
 
-13 skills: Fishing, Mining, Woodcutting, Cooking, Smithing, Crafting (including bows and arrows), Herblore, Melee, Magic, Ranged, HP, Slayer and Prayer. Skills cap at 99 with a custom accelerated XP curve. Melee remains a single skill.
+## Loot balance and bank
 
-Six equipment tiers run Bronze through Runic. Production includes cooked fish, smelted bars, swords, armour, bows, staves, jewellery, arrows, leather armour and health/mana/battle/Prayer potions. Monsters drop bones, gold and species-specific materials or rare equipment. Nine enemy species span giant rats through the Elder Dragon and the Hollow King. Bosses and high-Slayer foes provide late-game challenges.
+Normal encounters now roll 0.05% for an egg and 0.08% for equipment per victory before luck. Bosses roll 0.0625% / 0.1%; Slayer encounters roll 0.055% / 0.088%. Materials and gold retain their normal progression. Foraging starts at 0.001% per cycle, adjusted by its existing tier/mastery/luck formula.
 
-## Live combat
+Seventy-two actual seeded eight-hour settlements averaged 4.8–5.5 eggs and 7.8–8.8 equipment for the two normal farming fixtures. Boss farming averaged 6.2 eggs and 10.5 items. These are fixed-team cadence fixtures, not a guaranteed allowance; some sessions found no eggs. Breeding outputs and once-only gifts are separate. Existing owned eggs/items are preserved. See LOOT-SIMULATION-REPORT.json.
 
-Simulation ticks are 600 ms at 1×; speed controls offer 1×, 2× and 4×. Rendering interpolates movement independently. Melee attacks every 3 ticks, Ranged every 4 and Magic every 5. Combat remains on the shared map with projectiles, strikes, damage indicators, health bars and visible drops. Enemies pursue locally and leash back to their home camps. Adventurers eat, retreat and rest.
+Adventure first clears guarantee an egg and Epic/Legendary equipment. Repeat dungeon completion rolls 5% egg / 25% equipment; repeat raids roll 10% / 40%. Gold/relics remain guaranteed. First boss clears also grant one Rare Essence once. Drop sheets distinguish first-clear guarantees from repeatable rolls.
 
-Magic spends regenerating mana, not runes. Ranged spends arrows. Prayer consumes points while active and reduces incoming damage by 30%; bones train it and shrines replenish it. Combat gear and skill levels affect attacks; armour reduces enemy damage. Battle potions give a temporary damage boost.
+Bank provides searchable resource and egg stack grids with real stored counts, category filters, exact-quantity selling and direct egg loading. Equipment management retains its own full inspection/upgrade/salvage screen.
 
-### Death and inventories
+## Farm and offline progression
 
-Each adventurer carries 28 inventory slots, plus six equipped slots: main hand, off hand, helmet, armour, boots and amulet. Arrows, bones and gems stack; other items occupy individual slots. Private banks have unlimited capacity and are accessed at bank buildings.
+Egg storage groups by family, such as **Cindlet egg ×34**. Individual eggs retain their IDs, sources, genetics and variant rolls; oldest matching eggs load first. Fill empty nests and hatch all ready eggs in one action. Ordinary incubation is five minutes before upgrades. Existing in-flight ordinary eggs receive one twelfth of their former remaining time exactly once when migrating. Ready eggs and the 30-second starter retain their deadlines.
 
-Outside the Wilderness: equipment stays equipped and carried items remain in a private gravestone. The owner can collect them. After 600 ticks, items move to recovery; visiting a bank and paying 15 personal gold transfers them to that adventurer's bank.
+All offline progress has a fixed **12-hour cap**: combat, farm tasks, automation, incubation, breeding, facility work and recovery. Pending timers freeze after those 12 hours and resume on return. Expedition no longer increases the window; its existing levels now improve combat XP with diminishing returns toward +50%.
 
-Inside Wilderness: the three most valuable carried/equipped item slots are protected; other items drop. Initiating a player attack adds a skull for 500 ticks and protects only one item slot. Stack value is the entire stack's stable catalog value. The killer has loot priority for 40 ticks; remaining items then become public. Loot expires after 800 ticks. Bank contents and the separate personal gold balance are safe. There is no permanent character death.
+Work area 1 preserves the old crew, queue, workflows and loadouts. Additional work areas persist independently and use the same chronological resolver. No active creature is borrowed from another task, combat or breeding.
 
-## Controls
+## Development
 
-- Drag to pan, pinch or wheel to zoom, and tap the minimap to jump.
-- Enter World Forge to hold time and open the illustrated build shelf. Swipe horizontally or use its arrows to browse. Drag a building card upward onto the map, or select it and drag its ghost into position on the map. Release and confirm. Terrain and resources support continuous painting. Use two fingers, the hand tool, right-drag or Space to pan. Watch / Done returns to simulation.
-- Inspect mode lets you select adventurers, resources, buildings, monsters or ground.
-- Use the character panel for orders, skills, equipment, recipes, bank, market and Slayer store.
-- P toggles pause. Escape exits the build tool. Ctrl/Cmd+Z undoes a build stroke; Shift+Ctrl/Cmd+Z redoes it.
-- Undo restores the **entire realm** to before that stroke, including adventurer progress. History is session-local and capped at 20 strokes.
+Root source modules: model.ts, content.ts, engine.ts, persistence.ts, app.tsx, interface.tsx, idle.tsx, farm.tsx, portraits.tsx, main.tsx, styles.css, interface.css, farm.css, idle.css, simulator-worker.ts. Deterministic engine functions do not depend on React or Firebase.
 
-## Saving, installing and moving devices
+With Node available: `npm ci`, `npm test`, `npm run balance`, `npm run build`. These are developer commands, not required to play or deploy the delivered static files from a phone.
 
-Autosave uses this browser's local storage every 15 seconds and on page hide. A previous-save backup is kept. Settings includes manual save and JSON export/import. **There is no cloud synchronization or account login.** Export from one device and import on another to move a realm. Opening in a different browser does not automatically share the save. The simulation does not advance while closed or hidden, so there are no offline losses.
+The build uses `index.source.html` as its source template, emits flat output to a transient staging directory, and packages the manifest/service worker. Commit the prepared source and output together. Keep a visible version and update CHANGELOG.md on every release. Do not edit generated bundles by hand.
 
-An HTTPS service worker caches runtime files after the first successful visit for offline reopening, where the browser and host permit it. Browsers may offer Add to Home Screen. Export a backup before clearing browser data or replacing a realm.
+Browser verification uses `node --import tsx browser-check.mjs`, with `CHROMIUM_PATH` pointing to a supported local Chromium binary. It starts its own Vite server in the same process and uses isolated test fixtures; no real player account is created. Firestore rules tests use the local emulator with the demo project only; no production rules or billing settings are changed.
 
-## Source map
+## Artwork and encyclopedia
 
-- `data.js`: content catalogs, XP curve, milestone definitions.
-- `engine.js`: deterministic simulation, world editor operations, pathfinding, economy, AI, combat, saves.
-- `render.js`: terrain and procedural canvas art, animation, labels, minimap.
-- `app.js`: controls, touch gestures, panels, state, backup/export, autosave.
-- `style.css`: responsive desktop/tablet/phone interface.
-- `tests.mjs`: simulation, economy, AI, combat, death, persistence and long-run checks.
-- `ui-tests.mjs`: JavaScript UI/renderer integration smoke checks using test doubles. These do not perform browser layout or touch-device verification.
+All 150 forms use the approved painted art. Tap any form in Collection to enlarge it and inspect its stats, abilities, passive, aptitudes and evolution costs. Color/effect preview controls demonstrate all nine variant combinations. Image assets are the only nested project files, inside `img/`.
 
-Run `node tests.mjs` and `node ui-tests.mjs`, or `npm test`. Node 20+ is sufficient. `editor-tests.mjs` additionally checks gesture classification, brush interpolation and blank-world admission. No dependencies are needed.
+## Verification
 
-## The Worldforge update (1.1)
-
-The interface uses a full-screen map, ornamental metal/leather navigation, parchment panels, original vector tool illustrations and embedded fantasy serif typography. Runtime font licensing is included in FONT-LICENSE.txt.
-
-Existing saves are preserved. The first update screen offers exporting the old realm, continuing it, or replacing it with a blank world. New worlds never load the seeded test fixture.
-
-## Build controls fix (1.2)
-
-The build tray has a fixed top bar with a World Paused indicator and labeled Undo, Redo and Done controls. Entering Build explicitly pauses simulation and locks pause/speed controls. Done exits building and resumes simulation. Undo/redo history belongs to that paused build session and clears on exit.
-
-## Foundation update (1.3)
-
-- Version v1.3.0 appears in the top header, even before application startup.
-- Undo/Redo/Done occupy a separate fixed bar below the header, outside the scrollable building tray. The Undo label stays visible when there is no history.
-- Placement previews and actual placement share the same rule function, including shore fishing, unique arrival gates, boundaries and occupied cells. Right-button panning does not place objects.
-- Equipment now has main hand, off hand, helmet, armour, boots and amulet. Shields support Melee, magical focuses support Magic and quivers support Ranged. All six slots connect to crafting, market stocks, AI upgrades and death rules. Old three-slot saves migrate automatically. Incompatible off-hand swaps require room in the pack and fail without losing anything if it is full.
-- The terrain/minimap use a persistent canvas layer. Unchanged frames reuse it; edited terrain updates only changed cells and neighbors. Skill thresholds use a table and binary lookup. Walkability and service destinations are cached between world edits.
-- `foundation-tests.mjs` covers equipment, migration, inventory conservation and editor validation. Browser layout and physical-device frame rate have not been measured in this environment.
+See TEST-REPORT.md for the actual test/build evidence and its limits. Reproduce the extra checks with `npm run release:check`, `npm run progression`, and `node --import tsx performance-check.ts`. The supplied reports distinguish earned-only progression from deliberately populated regression fixtures.

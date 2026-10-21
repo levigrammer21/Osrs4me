@@ -1,0 +1,54 @@
+[
+  {
+    "name": "encyclopedia art page 1 decodes",
+    "passed": true
+  },
+  {
+    "name": "all thirty form inspectors open on page 1",
+    "passed": true
+  },
+  {
+    "name": "encyclopedia art page 2 decodes",
+    "passed": true
+  },
+  {
+    "name": "all thirty form inspectors open on page 2",
+    "passed": true
+  },
+  {
+    "name": "encyclopedia art page 3 decodes",
+    "passed": true
+  },
+  {
+    "name": "all thirty form inspectors open on page 3",
+    "passed": true
+  },
+  {
+    "name": "encyclopedia art page 4 decodes",
+    "passed": true
+  },
+  {
+    "name": "all thirty form inspectors open on page 4",
+    "passed": true
+  },
+  {
+    "name": "encyclopedia art page 5 decodes",
+    "passed": true
+  },
+  {
+    "name": "all thirty form inspectors open on page 5",
+    "passed": true
+  },
+  {
+    "name": "all 150 form portraits render across encyclopedia pages",
+    "passed": true
+  },
+  {
+    "name": "all nine variant combinations have distinct classes",
+    "passed": true
+  },
+  {
+    "name": "no artwork runtime errors",
+    "passed": true
+  }
+]

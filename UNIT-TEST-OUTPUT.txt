@@ -1,0 +1,21 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> creature-adventure@1.3.0 test
+> vitest run --maxWorkers=1
+
+
+ RUN  v3.2.7 /workspace/scratch/3b8102b303b2/creature-adventure
+
+ ↓ rules.test.ts (3 tests | 3 skipped)
+ ✓ engine.test.ts (34 tests) 792ms
+ ✓ farm.test.ts (10 tests) 492ms
+   ✓ caps every offline clock at twelve hours even with expedition upgrades  435ms
+ ✓ art.test.ts (1 test) 216ms
+ ✓ persistence.test.ts (5 tests) 18ms
+ ✓ loot.test.ts (7 tests) 25ms
+
+ Test Files  5 passed | 1 skipped (6)
+      Tests  57 passed | 3 skipped (60)
+   Start at  09:03:48
+   Duration  4.04s (transform 340ms, setup 0ms, collect 1.03s, tests 1.54s, environment 1ms, prepare 434ms)
+

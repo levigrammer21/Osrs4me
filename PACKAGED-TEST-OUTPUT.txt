@@ -1,0 +1,39 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> creature-adventure@1.3.0 packaged
+> node --import tsx packaged-check.mjs
+
+[
+  {
+    "name": "compiled bundles load under repository subpath",
+    "passed": true
+  },
+  {
+    "name": "service worker controls installed game",
+    "passed": true
+  },
+  {
+    "name": "installed game and device progress survive an offline reload",
+    "passed": true
+  },
+  {
+    "name": "release version is visible",
+    "passed": true
+  },
+  {
+    "name": "all ten painted atlases remain available offline",
+    "passed": true
+  },
+  {
+    "name": "nursery painted previews remain available offline",
+    "passed": true
+  },
+  {
+    "name": "packaged app has no horizontal overflow",
+    "passed": true
+  },
+  {
+    "name": "no runtime errors in compiled output",
+    "passed": true
+  }
+]

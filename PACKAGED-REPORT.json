@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-10-21T15:04:10.985Z",
+  "checks": [
+    {
+      "name": "compiled bundles load under repository subpath",
+      "passed": true
+    },
+    {
+      "name": "service worker controls installed game",
+      "passed": true
+    },
+    {
+      "name": "installed game and device progress survive an offline reload",
+      "passed": true
+    },
+    {
+      "name": "release version is visible",
+      "passed": true
+    },
+    {
+      "name": "all ten painted atlases remain available offline",
+      "passed": true
+    },
+    {
+      "name": "nursery painted previews remain available offline",
+      "passed": true
+    },
+    {
+      "name": "packaged app has no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "no runtime errors in compiled output",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,8 @@
+Simulated day 0
+Simulated day 1
+Simulated day 2
+Simulated day 3
+Simulated day 4
+Simulated day 5
+Simulated day 6
+{"creatures":22,"incubators":4,"regions":5,"skillCycles":182129,"wins":94888,"highestLevel":166,"forms":20,"evolutions":7,"families":17}

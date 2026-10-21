@@ -1,0 +1,770 @@
+{
+  "version": "1.3.0",
+  "timestamp": "2026-10-20T13:33:25.101Z",
+  "method": "72 actual seeded eight-hour settlements through the shared engine. Six stage-three creatures; one independent forager; no gear or luck; boss unlocks already cleared, so first-clear gifts excluded. Levels deliberately injected as cadence fixtures. Random drops are not a guaranteed session allowance.",
+  "rates": {
+    "wildEgg": 0.0005,
+    "wildEquipment": 0.0008,
+    "bossEgg": 0.000625,
+    "bossEquipment": 0.001,
+    "baseForagingEgg": 0.00001
+  },
+  "scenarios": [
+    {
+      "name": "balanced farming",
+      "level": 80,
+      "encounter": "wild-2-0",
+      "meanEggs": 5.5,
+      "meanEquipment": 7.791666666666667,
+      "meanVictories": 10024,
+      "minEggs": 2,
+      "maxEggs": 10,
+      "trials": [
+        {
+          "seed": 1,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 3,
+          "combatEggs": 3,
+          "foragingEggs": 0,
+          "equipment": 7,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 2,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 4,
+          "combatEggs": 4,
+          "foragingEggs": 0,
+          "equipment": 5,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 3,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 3,
+          "combatEggs": 3,
+          "foragingEggs": 0,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 4,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 10,
+          "combatEggs": 10,
+          "foragingEggs": 0,
+          "equipment": 3,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 5,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 5,
+          "combatEggs": 4,
+          "foragingEggs": 1,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 6,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 6,
+          "foragingEggs": 0,
+          "equipment": 7,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 7,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 4,
+          "combatEggs": 4,
+          "foragingEggs": 0,
+          "equipment": 10,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 8,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 3,
+          "combatEggs": 3,
+          "foragingEggs": 0,
+          "equipment": 11,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 9,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 7,
+          "combatEggs": 7,
+          "foragingEggs": 0,
+          "equipment": 10,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 10,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 9,
+          "combatEggs": 9,
+          "foragingEggs": 0,
+          "equipment": 10,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 11,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 5,
+          "combatEggs": 5,
+          "foragingEggs": 0,
+          "equipment": 11,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 12,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 5,
+          "combatEggs": 5,
+          "foragingEggs": 0,
+          "equipment": 5,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 13,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 6,
+          "foragingEggs": 0,
+          "equipment": 4,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 14,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 7,
+          "combatEggs": 7,
+          "foragingEggs": 0,
+          "equipment": 10,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 15,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 2,
+          "combatEggs": 2,
+          "foragingEggs": 0,
+          "equipment": 8,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 16,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 6,
+          "foragingEggs": 0,
+          "equipment": 11,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 17,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 4,
+          "combatEggs": 4,
+          "foragingEggs": 0,
+          "equipment": 5,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 18,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 5,
+          "foragingEggs": 1,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 19,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 9,
+          "combatEggs": 9,
+          "foragingEggs": 0,
+          "equipment": 7,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 20,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 3,
+          "combatEggs": 3,
+          "foragingEggs": 0,
+          "equipment": 12,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 21,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 9,
+          "combatEggs": 9,
+          "foragingEggs": 0,
+          "equipment": 4,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 22,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 4,
+          "combatEggs": 3,
+          "foragingEggs": 1,
+          "equipment": 11,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 23,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 5,
+          "foragingEggs": 1,
+          "equipment": 4,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 24,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 6,
+          "foragingEggs": 0,
+          "equipment": 5,
+          "simulatedHours": 8
+        }
+      ]
+    },
+    {
+      "name": "overleveled starter farming",
+      "level": 300,
+      "encounter": "wild-0-0",
+      "meanEggs": 4.833333333333333,
+      "meanEquipment": 8.75,
+      "meanVictories": 10286,
+      "minEggs": 0,
+      "maxEggs": 9,
+      "trials": [
+        {
+          "seed": 1,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 3,
+          "combatEggs": 3,
+          "foragingEggs": 0,
+          "equipment": 6,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 2,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 2,
+          "combatEggs": 2,
+          "foragingEggs": 0,
+          "equipment": 10,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 3,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 2,
+          "combatEggs": 2,
+          "foragingEggs": 0,
+          "equipment": 8,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 4,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 7,
+          "combatEggs": 5,
+          "foragingEggs": 2,
+          "equipment": 7,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 5,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 9,
+          "combatEggs": 8,
+          "foragingEggs": 1,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 6,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 7,
+          "combatEggs": 7,
+          "foragingEggs": 0,
+          "equipment": 8,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 7,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 8,
+          "combatEggs": 8,
+          "foragingEggs": 0,
+          "equipment": 12,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 8,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 5,
+          "combatEggs": 5,
+          "foragingEggs": 0,
+          "equipment": 13,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 9,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 5,
+          "foragingEggs": 1,
+          "equipment": 12,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 10,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 5,
+          "combatEggs": 5,
+          "foragingEggs": 0,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 11,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 3,
+          "combatEggs": 3,
+          "foragingEggs": 0,
+          "equipment": 10,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 12,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 4,
+          "combatEggs": 4,
+          "foragingEggs": 0,
+          "equipment": 8,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 13,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 4,
+          "combatEggs": 4,
+          "foragingEggs": 0,
+          "equipment": 7,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 14,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 6,
+          "foragingEggs": 0,
+          "equipment": 6,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 15,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 4,
+          "combatEggs": 3,
+          "foragingEggs": 1,
+          "equipment": 5,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 16,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 4,
+          "combatEggs": 4,
+          "foragingEggs": 0,
+          "equipment": 7,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 17,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 1,
+          "combatEggs": 1,
+          "foragingEggs": 0,
+          "equipment": 7,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 18,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 7,
+          "combatEggs": 7,
+          "foragingEggs": 0,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 19,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 4,
+          "combatEggs": 4,
+          "foragingEggs": 0,
+          "equipment": 7,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 20,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 0,
+          "combatEggs": 0,
+          "foragingEggs": 0,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 21,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 5,
+          "combatEggs": 5,
+          "foragingEggs": 0,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 22,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 7,
+          "combatEggs": 7,
+          "foragingEggs": 0,
+          "equipment": 10,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 23,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 6,
+          "foragingEggs": 0,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 24,
+          "wins": 10286,
+          "defeats": 0,
+          "eggs": 7,
+          "combatEggs": 7,
+          "foragingEggs": 0,
+          "equipment": 13,
+          "simulatedHours": 8
+        }
+      ]
+    },
+    {
+      "name": "boss farming",
+      "level": 300,
+      "encounter": "boss-2",
+      "meanEggs": 6.208333333333333,
+      "meanEquipment": 10.5,
+      "meanVictories": 10024,
+      "minEggs": 0,
+      "maxEggs": 11,
+      "trials": [
+        {
+          "seed": 1,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 4,
+          "combatEggs": 4,
+          "foragingEggs": 0,
+          "equipment": 8,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 2,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 10,
+          "combatEggs": 10,
+          "foragingEggs": 0,
+          "equipment": 7,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 3,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 8,
+          "combatEggs": 7,
+          "foragingEggs": 1,
+          "equipment": 14,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 4,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 11,
+          "combatEggs": 11,
+          "foragingEggs": 0,
+          "equipment": 7,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 5,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 7,
+          "combatEggs": 7,
+          "foragingEggs": 0,
+          "equipment": 10,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 6,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 10,
+          "combatEggs": 10,
+          "foragingEggs": 0,
+          "equipment": 10,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 7,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 4,
+          "combatEggs": 4,
+          "foragingEggs": 0,
+          "equipment": 13,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 8,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 6,
+          "foragingEggs": 0,
+          "equipment": 12,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 9,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 3,
+          "combatEggs": 3,
+          "foragingEggs": 0,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 10,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 8,
+          "combatEggs": 7,
+          "foragingEggs": 1,
+          "equipment": 13,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 11,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 0,
+          "combatEggs": 0,
+          "foragingEggs": 0,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 12,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 9,
+          "combatEggs": 9,
+          "foragingEggs": 0,
+          "equipment": 8,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 13,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 5,
+          "combatEggs": 5,
+          "foragingEggs": 0,
+          "equipment": 10,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 14,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 5,
+          "combatEggs": 5,
+          "foragingEggs": 0,
+          "equipment": 12,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 15,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 10,
+          "combatEggs": 10,
+          "foragingEggs": 0,
+          "equipment": 8,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 16,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 5,
+          "combatEggs": 5,
+          "foragingEggs": 0,
+          "equipment": 13,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 17,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 3,
+          "combatEggs": 3,
+          "foragingEggs": 0,
+          "equipment": 15,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 18,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 6,
+          "foragingEggs": 0,
+          "equipment": 8,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 19,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 3,
+          "combatEggs": 3,
+          "foragingEggs": 0,
+          "equipment": 12,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 20,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 3,
+          "combatEggs": 3,
+          "foragingEggs": 0,
+          "equipment": 9,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 21,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 9,
+          "combatEggs": 9,
+          "foragingEggs": 0,
+          "equipment": 11,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 22,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 5,
+          "combatEggs": 5,
+          "foragingEggs": 0,
+          "equipment": 14,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 23,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 9,
+          "combatEggs": 8,
+          "foragingEggs": 1,
+          "equipment": 11,
+          "simulatedHours": 8
+        },
+        {
+          "seed": 24,
+          "wins": 10024,
+          "defeats": 0,
+          "eggs": 6,
+          "combatEggs": 6,
+          "foragingEggs": 0,
+          "equipment": 9,
+          "simulatedHours": 8
+        }
+      ]
+    }
+  ]
+}

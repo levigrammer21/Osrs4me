@@ -1,0 +1,275 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> creature-adventure@1.3.0 browser
+> node --import tsx ui-check.mjs
+
+[
+  {
+    "name": "new-player overview explains incubation",
+    "passed": true
+  },
+  {
+    "name": "starter hatches directly from overview",
+    "passed": true
+  },
+  {
+    "name": "welcome supplies remain functional",
+    "passed": true
+  },
+  {
+    "name": "overview uses activity ledger instead of illustrated farm hero",
+    "passed": true
+  },
+  {
+    "name": "overview exposes every skill with actual levels",
+    "passed": true
+  },
+  {
+    "name": "overview fits 320px",
+    "passed": true
+  },
+  {
+    "name": "overview fits 390px",
+    "passed": true
+  },
+  {
+    "name": "overview fits 768px",
+    "passed": true
+  },
+  {
+    "name": "overview fits 1280px",
+    "passed": true
+  },
+  {
+    "name": "Home navigation works",
+    "passed": true
+  },
+  {
+    "name": "Home fits mobile",
+    "passed": true
+  },
+  {
+    "name": "Combat navigation works",
+    "passed": true
+  },
+  {
+    "name": "Combat fits mobile",
+    "passed": true
+  },
+  {
+    "name": "Creatures navigation works",
+    "passed": true
+  },
+  {
+    "name": "Creatures fits mobile",
+    "passed": true
+  },
+  {
+    "name": "Skills navigation works",
+    "passed": true
+  },
+  {
+    "name": "Skills fits mobile",
+    "passed": true
+  },
+  {
+    "name": "Farm navigation works",
+    "passed": true
+  },
+  {
+    "name": "Farm fits mobile",
+    "passed": true
+  },
+  {
+    "name": "Bank navigation works",
+    "passed": true
+  },
+  {
+    "name": "Bank fits mobile",
+    "passed": true
+  },
+  {
+    "name": "Equipment navigation works",
+    "passed": true
+  },
+  {
+    "name": "Equipment fits mobile",
+    "passed": true
+  },
+  {
+    "name": "Slayer navigation works",
+    "passed": true
+  },
+  {
+    "name": "Slayer fits mobile",
+    "passed": true
+  },
+  {
+    "name": "Collection navigation works",
+    "passed": true
+  },
+  {
+    "name": "Collection fits mobile",
+    "passed": true
+  },
+  {
+    "name": "Shop navigation works",
+    "passed": true
+  },
+  {
+    "name": "Shop fits mobile",
+    "passed": true
+  },
+  {
+    "name": "Settings navigation works",
+    "passed": true
+  },
+  {
+    "name": "Settings fits mobile",
+    "passed": true
+  },
+  {
+    "name": "skill screen combines activity catalog and selected recipe",
+    "passed": true
+  },
+  {
+    "name": "second work area starts while first keeps running",
+    "passed": true
+  },
+  {
+    "name": "parallel activities persist through refresh",
+    "passed": true
+  },
+  {
+    "name": "foraging shows reduced actual egg probability",
+    "passed": true
+  },
+  {
+    "name": "bank uses real stack grid",
+    "passed": true
+  },
+  {
+    "name": "bank search filters actual material stacks",
+    "passed": true
+  },
+  {
+    "name": "selecting a stack opens its actions",
+    "passed": true
+  },
+  {
+    "name": "bank sale changes actual gold",
+    "passed": true
+  },
+  {
+    "name": "eggs remain stacked in bank",
+    "passed": true
+  },
+  {
+    "name": "bank can load an egg without duplicating it",
+    "passed": true
+  },
+  {
+    "name": "farm overview exposes all real facility upgrades",
+    "passed": true
+  },
+  {
+    "name": "nursery preserves stacked pantry and occupied nest",
+    "passed": true
+  },
+  {
+    "name": "combat still animates projectiles in both directions",
+    "passed": true
+  },
+  {
+    "name": "live drops expose per-victory and conditional rarity rates",
+    "passed": true
+  },
+  {
+    "name": "wild drop sheet shows the reduced egg chance",
+    "passed": true
+  },
+  {
+    "name": "adventure drops identify first-clear guarantees",
+    "passed": true
+  },
+  {
+    "name": "Escape dismisses detail sheet",
+    "passed": true
+  },
+  {
+    "name": "retained equipment actions remain functional",
+    "passed": true
+  },
+  {
+    "name": "Home fits desktop",
+    "passed": true
+  },
+  {
+    "name": "Combat fits desktop",
+    "passed": true
+  },
+  {
+    "name": "Creatures fits desktop",
+    "passed": true
+  },
+  {
+    "name": "Skills fits desktop",
+    "passed": true
+  },
+  {
+    "name": "Farm fits desktop",
+    "passed": true
+  },
+  {
+    "name": "Bank fits desktop",
+    "passed": true
+  },
+  {
+    "name": "Equipment fits desktop",
+    "passed": true
+  },
+  {
+    "name": "Slayer fits desktop",
+    "passed": true
+  },
+  {
+    "name": "Collection fits desktop",
+    "passed": true
+  },
+  {
+    "name": "Shop fits desktop",
+    "passed": true
+  },
+  {
+    "name": "Settings fits desktop",
+    "passed": true
+  },
+  {
+    "name": "desktop grouped navigation exposes all eight skills",
+    "passed": true
+  },
+  {
+    "name": "Skills fits narrow 320px phone",
+    "passed": true
+  },
+  {
+    "name": "Bank fits narrow 320px phone",
+    "passed": true
+  },
+  {
+    "name": "Combat fits narrow 320px phone",
+    "passed": true
+  },
+  {
+    "name": "Equipment fits narrow 320px phone",
+    "passed": true
+  },
+  {
+    "name": "Farm fits narrow 320px phone",
+    "passed": true
+  },
+  {
+    "name": "no uncaught UI errors",
+    "passed": true
+  }
+]
